@@ -4,17 +4,18 @@ MAINTAINER showers suyulingxm@163.com
 
 RUN go get github.com/lifei6671/gocaptcha
 
-COPY app.go /home/gocaptcha
-COPY fonts /home/gocaptcha
+WORKDIR /go/src/gocaptcha
 
-EXPOSE 8080
-
-ENTRYPOINT go run /home/gocaptcha/app.go
+COPY app.go /go/src/gocaptcha/
+COPY fonts/* /go/src/gocaptcha/fonts/
 
 
+EXPOSE 3000
+
+ ENTRYPOINT go run app.go
 
 
-# RUN go run app.go
+# DOCKER_OPTS="--registry-mirror=suyulin.com:50000"
 
 
 

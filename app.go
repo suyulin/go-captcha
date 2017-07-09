@@ -66,10 +66,3 @@ func Get(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(200)
 	w.Write([]byte(result))
 }
-sudo docker login --username=412790861 ccr.ccs.tencentyun.com
-sudo docker tag 539234e8e884 ccr.ccs.tencentyun.com/showers/demo:v1
-sudo docker tag 539234e8e884 ccr.ccs.tencentyun.com/showers/docker:[tag]
-sudo docker push ccr.ccs.tencentyun.com/showers/demo
-/home/ubuntu/.docker
-sudo docker login --username=ubuntu suyulin.com:5000/v2
-DOCKER_OPTS="--registry-mirror=suyulin.com:5000"
