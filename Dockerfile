@@ -16,6 +16,10 @@ EXPOSE 3000
 
 
 # DOCKER_OPTS="--registry-mirror=suyulin.com:50000"
+# "insecure-registries":["suyulin.com:5000"] // 
+# docker run -d -v /var/run/docker.sock:/var/run/docker.sock \ -v $(which docker):/usr/bin/docker  jenkins:lates
+
+
 
 
 
