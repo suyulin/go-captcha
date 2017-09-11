@@ -26,8 +26,8 @@ func main() {
 		return
 	}
 	http.HandleFunc("/", Get)
-	fmt.Println("服务已启动...4000")
-	err = http.ListenAndServe(":4000", nil)
+	fmt.Println("服务已启动...3000")
+	err = http.ListenAndServe(":3000", nil)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -12,7 +12,7 @@ COPY fonts/* /go/src/gocaptcha/fonts/
 
 EXPOSE 3000
 
- ENTRYPOINT go run app.go
+ENTRYPOINT go run app.go
 
 
 # DOCKER_OPTS="--registry-mirror=suyulin.com:50000"
